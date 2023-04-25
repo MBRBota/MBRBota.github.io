@@ -1,0 +1,141 @@
+:root{
+    --vampire_black: #0D0208;
+    --dark_green: #003B00;
+    --malachite_green: #00FF41;
+}
+
+.welcome__container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vampire_black);
+    border: 2px solid var(--dark_green);
+}
+
+.welcome__container::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 3;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+.welcome__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: 28%;
+}
+
+.Typewriter__wrapper, .Typewriter__cursor{
+    color: #00FF41;
+    font-size: 4rem;
+    font-family: 'Alien Encounter', sans-serif;
+}
+
+.Typewriter__wrapper{
+    width: 100%;
+}
+
+.Typewriter__cursor{
+    margin-left: 40px;
+    width: 20px;
+}
+
+.welcome__buttons{
+    position: absolute;
+    top: 135%;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__modals{
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome__modals button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Alien Encounter', sans-serif;
+    font-size: 2rem;
+    width: 45%;
+    padding: 10px;
+    color: var(--malachite_green);
+    background: none;
+    border: 2px solid var(--malachite_green);
+}
+
+.welcome__modals button:hover{
+    background-color: var(--malachite_green);
+    color:var(--vampire_black);
+    cursor: pointer;
+}
+
+.welcome__modals button:active{
+    background-color: var(--dark_green);
+    color: var(--vampire_black);
+}
+
+.welcome__socials{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 10px;
+}
+
+.welcome__social-link i{
+    font-size: 3.5rem;
+    color: var(--vampire_black);
+    z-index: 2;
+}
+
+.welcome__social-link{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.welcome__social-link:before{
+    content: "";
+    background: var(--malachite_green);
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    z-index: -1;
+}
+
+.welcome__social-link i:hover{
+    color: var(--malachite_green);
+    background-color: var(--vampire_black);
+    cursor: pointer;
+}
+
+.welcome__social-link i:active{
+    color: var(--dark_green);
+    background-color: var(--vampire_black);
+}
+
+@font-face {
+    font-family: "Alien Encounter";
+    src: url("../assets/Alien-Encounters-Bold.ttf");
+}
