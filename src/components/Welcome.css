@@ -24,7 +24,7 @@
     bottom: 2px;
     right: 2px;
     background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 3;
+    z-index: 10;
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
 }
@@ -103,14 +103,13 @@
 .welcome__social-link i{
     font-size: 3.5rem;
     color: var(--vampire_black);
-    z-index: 2;
 }
 
 .welcome__social-link{
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    z-index: 2;
+    z-index: 0;
 }
 
 .welcome__social-link:before{
