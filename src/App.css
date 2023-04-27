@@ -1,4 +1,16 @@
+:root{
+  --vampire_black: #0D0208;
+  --dark_green: #003B00;
+  --islamic_green: #008F11;
+  --malachite_green: #00FF41;
+}
+
 .page__container{
   height: 100%;
   width: 100%;
+}
+
+@font-face {
+  font-family: "Alien Encounter";
+  src: url("./assets/Alien-Encounters-Bold.ttf");
 }

@@ -1,9 +1,3 @@
-:root{
-    --vampire_black: #0D0208;
-    --dark_green: #003B00;
-    --malachite_green: #00FF41;
-}
-
 .welcome__container{
     height: 100%;
     width: 100%;
@@ -34,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    min-width: 28%;
+    min-width: 550px;
 }
 
 .Typewriter__wrapper, .Typewriter__cursor{
@@ -134,7 +128,3 @@
     background-color: var(--vampire_black);
 }
 
-@font-face {
-    font-family: "Alien Encounter";
-    src: url("../assets/Alien-Encounters-Bold.ttf");
-}
