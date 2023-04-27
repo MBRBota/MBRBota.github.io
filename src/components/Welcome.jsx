@@ -1,7 +1,7 @@
 import "./Welcome.css"
 import Typewriter from "typewriter-effect"
 
-function Welcome() {
+function Welcome({ openModal }) {
     return(
       <div className="welcome__container">
         <div className="welcome__wrapper">
@@ -14,8 +14,8 @@ function Welcome() {
           />
           <div className="welcome__buttons">
             <div className="welcome__modals">
-              <button className="welcome__profile-button">Profile</button>
-              <button className="welcome__projects-button">Projects</button>
+              <button className="welcome__profile-button" onClick={() => openModal("Profile")}>Profile</button>
+              <button className="welcome__projects-button" onClick={() => openModal("Projects")}>Projects</button>
             </div>
             <div className="welcome__socials">
               <a className="welcome__social-link" target="_blank" href="https://github.com/MBRBota"><i className="fa-brands fa-square-github"></i></a>
