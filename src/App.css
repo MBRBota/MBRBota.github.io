@@ -14,3 +14,9 @@
   font-family: "Alien Encounter";
   src: url("./assets/Alien-Encounters-Bold.ttf");
 }
+
+@media only screen and (max-width: 1320px) {
+  .ReactModal__Content, .ReactModal__Content--after-open{
+      inset: 3% 15% !important;
+    }
+}
