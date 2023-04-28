@@ -2,8 +2,67 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4%;
+    height: 35px;
+    padding: 2px 2px;
     background-color: #B67200;
+}
+
+.header__title, .header__controls{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header__icon-wrapper, .header__controls button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border: 3px solid var(--vampire_black);
+    color: var(--vampire_black);
+    overflow: hidden;
+}
+
+.header__icon-wrapper{
+    background-color: var(--malachite_green);
+    margin-right: 10px;
+}
+
+.header__text{
+    margin: 0;
+    font-family: 'Alien Encounter', sans-serif;
+    color: var(--vampire_black);
+    font-size: 1.5rem;
+}
+
+.control__toggle-fullscreen{
+    background-color: #6F75FA;
+    margin-right: 2px;
+    font-size: 1.07rem;
+}
+
+.control__toggle-fullscreen:hover{
+    background-color: #979BFF;
+    cursor: pointer;
+}
+
+.control__toggle-fullscreen:active{
+    background-color: #5458CA;
+}
+
+.control__close{
+    background-color: #DF0000;
+    font-size: 1.25rem;
+}
+
+.control__close:hover{
+    background-color: #D66F6F;
+    cursor: pointer;
+}
+
+.control__close:active{
+    background-color: #970000;
 }
 
 .modal__header-gradient{

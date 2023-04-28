@@ -6,10 +6,18 @@ function ProfileModal({ closeModal, modalContent }) {
   return(
     <>
       <header className="modal__header">
-        <p>{modalContent}</p>
-        <button onClick={closeModal}>Close</button>
+        <div className="header__title">
+          <div className="header__icon-wrapper">
+            {modalContent.icon}
+          </div>
+          <p className="header__text">{modalContent.type}</p>
+        </div>
+        <div className="header__controls">
+          <button className="control__toggle-fullscreen"><i className="fa-solid fa-maximize"></i></button>
+          <button className="control__close" onClick={closeModal}><i className="fa-sharp fa-solid fa-square-xmark"></i></button>
+        </div>
       </header>
-      <div className="modal__header-gradient"></div>
+      <div className="modal__header-gradient" />
       <div className="modal__content">
         <p>lorem ipsum</p>
       </div>
