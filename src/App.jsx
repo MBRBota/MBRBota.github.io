@@ -8,10 +8,10 @@ Modal.setAppElement('#root')
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [modalContent, setModalContent] = useState(null);
+  const [modalContent, setModalContent] = useState({});
 
-  function openModal(modalType) {
-    setModalContent(modalType);
+  function openModal(modalSetup) {
+    setModalContent(modalSetup);
     setModalIsOpen(true);
   }
 
