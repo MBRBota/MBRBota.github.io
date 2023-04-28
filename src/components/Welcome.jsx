@@ -1,12 +1,19 @@
+import { useState } from "react"
 import "./Welcome.css"
 import Typewriter from "typewriter-effect"
 
 function Welcome({ openModal }) {
+  const [isScanlined, setIsScanlined] = useState(true)
+
+  function toggleScanline(){
+    setIsScanlined((prev) => !prev)
+  }
+
   const profileSetup = { type: "Profile", icon: <i className="fa-sharp fa-solid fa-user-tie"></i> }
-  const projectsSetup = { type: "Projects", icon: <i class="fa-solid fa-screwdriver-wrench"></i> }
+  const projectsSetup = { type: "Projects", icon: <i className="fa-solid fa-screwdriver-wrench"></i> }
 
     return(
-      <div className="welcome__container">
+      <div className={`welcome__container ${isScanlined ? "welcome__scanline" : ""}`}>
         <div className="welcome__wrapper">
           <Typewriter
             onInit={(typewriter) => {
@@ -26,6 +33,7 @@ function Welcome({ openModal }) {
             </div>
           </div>
         </div>
+        <button className={`scanline__toggle ${isScanlined ? "scanline__on" : "scanline__off"}`} title="Toggle Scanline" onClick={toggleScanline}><i className="fa-sharp fa-solid fa-tv"></i></button>
       </div>
     )
 }
