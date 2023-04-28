@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Modal from 'react-modal'
 import ProfileModal from './components/ProfileModal.jsx'
 import './App.css'
@@ -8,7 +8,9 @@ Modal.setAppElement('#root')
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsFullscreen, setIsFullscreen] = useState(false);
   const [modalContent, setModalContent] = useState({});
+  const windowWidth = useRef(window.innerWidth)
 
   function openModal(modalSetup) {
     setModalContent(modalSetup);
@@ -19,15 +21,21 @@ function App() {
     setModalIsOpen(false);
   }
 
+  function toggleFullscreen() {
+    setIsFullscreen((prev) => !prev)
+  }
+
+  const modalWindowedWidth = windowWidth.current > 1320 ? '30%' : '15%'
+
   const modalStyles = {
     overlay: {
       background: 'rgba(0,0,0,0)'
     },
     content: {
-      top: '3%',
-      left: '30%',
-      right: '30%',
-      bottom: '3%',
+      top: modalIsFullscreen ? '2px' : '3%',
+      left: modalIsFullscreen ? '2px' : modalWindowedWidth,
+      right: modalIsFullscreen ? '2px' : modalWindowedWidth,
+      bottom: modalIsFullscreen ? '2px' : '3%',
       background: '#EED9B5',
       borderRadius: 0,
       border: '2px solid #B67200',
@@ -43,7 +51,7 @@ function App() {
         onRequestClose={closeModal}
         style={modalStyles}
       >
-        <ProfileModal closeModal={closeModal} modalContent={modalContent}/>
+        <ProfileModal closeModal={closeModal} toggleFullscreen={toggleFullscreen} modalContent={modalContent}/>
       </Modal>
     </main>
   )

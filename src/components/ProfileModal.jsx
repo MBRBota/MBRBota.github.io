@@ -1,6 +1,6 @@
 import './ProfileModal.css'
 
-function ProfileModal({ closeModal, modalContent }) {
+function ProfileModal({ closeModal, toggleFullscreen, modalContent }) {
   
 
   return(
@@ -13,7 +13,7 @@ function ProfileModal({ closeModal, modalContent }) {
           <p className="header__text">{modalContent.type}</p>
         </div>
         <div className="header__controls">
-          <button className="control__toggle-fullscreen"><i className="fa-solid fa-maximize"></i></button>
+          <button className="control__toggle-fullscreen" onClick={toggleFullscreen}><i className="fa-solid fa-maximize"></i></button>
           <button className="control__close" onClick={closeModal}><i className="fa-sharp fa-solid fa-square-xmark"></i></button>
         </div>
       </header>
