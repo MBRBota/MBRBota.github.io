@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import Modal from 'react-modal'
-import ProfileModal from './components/ProfileModal.jsx'
+import MenuModal from './components/MenuModal.jsx'
 import './App.css'
 import Welcome from './components/Welcome.jsx'
 
@@ -51,7 +51,7 @@ function App() {
         onRequestClose={closeModal}
         style={modalStyles}
       >
-        <ProfileModal closeModal={closeModal} toggleFullscreen={toggleFullscreen} modalContent={modalContent}/>
+        <MenuModal closeModal={closeModal} toggleFullscreen={toggleFullscreen} modalContent={modalContent}/>
       </Modal>
     </main>
   )

@@ -1,6 +1,6 @@
-import './ProfileModal.css'
+import './MenuModal.css'
 
-function ProfileModal({ closeModal, toggleFullscreen, modalContent }) {
+function MenuModal({ closeModal, toggleFullscreen, modalContent }) {
   
 
   return(
@@ -25,4 +25,4 @@ function ProfileModal({ closeModal, toggleFullscreen, modalContent }) {
   )
 }
 
-export default ProfileModal
+export default MenuModal
