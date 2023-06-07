@@ -14,3 +14,8 @@
   font-family: "Alien Encounter";
   src: url("./assets/Alien-Encounters-Bold.ttf");
 }
+
+@font-face {
+  font-family: "Audiowide";
+  src: url("./assets/Audiowide-Regular.ttf");
+}
