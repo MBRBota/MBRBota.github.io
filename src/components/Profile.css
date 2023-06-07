@@ -1,0 +1,47 @@
+.profile__container{
+  padding: 0px 10px;
+}
+
+
+
+.tech__container{
+  margin-left: 20px;
+}
+
+.tech__list{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.tech__item{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  min-width: 155px;
+  background-color: #E9D0A5;
+  border-radius: 15px 0px 15px 0px;
+}
+
+.tech__logo{
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+}
+
+.tech__logo img{
+  width: 25px;
+  height: 25px;
+  object-fit: scale-down;
+}
+
+.tech__label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #E7CA98;
+  border-radius: 0px 0px 15px 0px;
+}

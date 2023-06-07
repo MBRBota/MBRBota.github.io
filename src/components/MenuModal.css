@@ -70,3 +70,12 @@
     height: 8px;
     background: linear-gradient(#B67200 15%, #EED9B5 100%)
 }
+
+.profile__container p {
+    font-family: Courier, monospace;
+    font-size: 1.1rem;
+  }
+  
+  .content__header{
+    font-family: 'Audiowide', Courier, monospace;
+  }

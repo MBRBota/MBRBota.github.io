@@ -19,7 +19,7 @@ function MenuModal({ closeModal, toggleFullscreen, modalContent }) {
       </header>
       <div className="modal__header-gradient" />
       <div className="modal__content">
-        <p>lorem ipsum</p>
+        {modalContent.component}
       </div>
     </>
   )

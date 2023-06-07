@@ -1,6 +1,8 @@
 import { useState } from "react"
 import "./Welcome.css"
 import Typewriter from "typewriter-effect"
+import Profile from "./Profile"
+import Projects from "./Projects"
 
 function Welcome({ openModal }) {
   const [isScanlined, setIsScanlined] = useState(true)
@@ -9,8 +11,8 @@ function Welcome({ openModal }) {
     setIsScanlined((prev) => !prev)
   }
 
-  const profileSetup = { type: "Profile", icon: <i className="fa-sharp fa-solid fa-user-tie"></i> }
-  const projectsSetup = { type: "Projects", icon: <i className="fa-solid fa-screwdriver-wrench"></i> }
+  const profileSetup = { type: "Profile", icon: <i className="fa-sharp fa-solid fa-user-tie"></i>, component: <Profile/> }
+  const projectsSetup = { type: "Projects", icon: <i className="fa-solid fa-screwdriver-wrench"></i>, component: <Projects/> }
 
     return(
       <div className={`welcome__container ${isScanlined ? "welcome__scanline" : ""}`}>
