@@ -1,0 +1,47 @@
+.projects__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+
+.project__tile{
+  background-color: rgba(192, 192, 192, 0.5);
+}
+
+.project__link{
+  display: flex;
+  flex-direction: column;
+  color: var(--vampire_black);
+  text-decoration: none;
+}
+
+.project__link:hover{
+  color: var(--islamic_green);
+}
+
+.project__link .content__header {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.project__screenshot {
+  width: 300px;
+  height: 300px;
+  object-fit: scale-down;
+  border: 2px solid var(--vampire_black);
+}
+
+.project__info{
+  border: 2px solid var(--vampire_black);
+  border-top: none;
+}
+
+.project__tech{
+  display: flex;
+  padding: 10px;
+}
+
+.project__tech .tech__logo{
+  margin: 0;
+}
