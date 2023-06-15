@@ -71,11 +71,27 @@
     background: linear-gradient(#B67200 15%, #EED9B5 100%)
 }
 
-.profile__container p {
+.modal__content {
+    padding: 0 10px;
+}
+ 
+.modal__content p {
     font-family: Courier, monospace;
     font-size: 1.1rem;
-  }
-  
-  .content__header{
+}
+
+.content__header{
     font-family: 'Audiowide', Courier, monospace;
-  }
+}
+
+.tech__logo{
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px;
+}
+  
+.tech__logo img{
+    width: 25px;
+    height: 25px;
+    object-fit: scale-down;
+}
