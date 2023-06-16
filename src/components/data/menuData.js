@@ -51,43 +51,43 @@ export default {
       {
         "name": "Exercise Tracker",
         "link": "https://github.com/MBRBota/freecodecamp-exercise-tracker",
-        "screenshot": "public/exercise.png",
+        "screenshot": "/exercise.png",
         "tech": ["Node.js", "MongoDB"]
       },
       {
         "name": "URL Shortener",
         "link": "https://github.com/MBRBota/freecodecamp-url-shortener",
-        "screenshot": "public/url.png",
+        "screenshot": "/url.png",
         "tech": ["Node.js", "MongoDB"]
       },
       {
         "name": "25 + 5 (Pomodoro) Clock",
         "link": "https://codepen.io/MBRBota/full/JjavWaZ",
-        "screenshot": "public/clock.png",
+        "screenshot": "/clock.png",
         "tech": ["React"]
       },
       {
         "name": "Markdown Previewer",
         "link": "https://codepen.io/MBRBota/full/bGxVMgm",
-        "screenshot": "public/markdown.png",
+        "screenshot": "/markdown.png",
         "tech": ["React"]
       },
       {
         "name": "JS Calculator",
         "link": "https://codepen.io/MBRBota/full/XWPMMwZ",
-        "screenshot": "public/calculator.png",
+        "screenshot": "/calculator.png",
         "tech": ["Javascript"]
       },
       {
         "name": "Drum Machine",
         "link": "https://codepen.io/MBRBota/full/OJoyKoB",
-        "screenshot": "public/drum.png",
+        "screenshot": "/drum.png",
         "tech": ["React"]
       },
       {
         "name": "Random Quote Machine",
         "link": "https://codepen.io/MBRBota/full/zYLVNJj",
-        "screenshot": "public/quote.png",
+        "screenshot": "/quote.png",
         "tech": ["React"]
       }
     ]
