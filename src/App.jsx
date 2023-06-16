@@ -7,10 +7,10 @@ import Welcome from './components/Welcome.jsx'
 Modal.setAppElement('#root')
 
 function App() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [modalIsFullscreen, setIsFullscreen] = useState(false);
-  const [modalContent, setModalContent] = useState({});
   const windowWidth = useRef(window.innerWidth)
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsFullscreen, setIsFullscreen] = useState(windowWidth.current > 560 ? false : true);
+  const [modalContent, setModalContent] = useState({});
 
   function openModal(modalSetup) {
     setModalContent(modalSetup);
